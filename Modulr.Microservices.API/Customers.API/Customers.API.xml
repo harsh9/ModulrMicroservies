@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Customers.API</name>
+    </assembly>
+    <members>
+        <member name="T:Customers.API.Controllers.CustomerController">
+            <summary>
+            Class CustomerController.
+            Implements the <see>
+                <cref>Microsoft.AspNetCore.Mvc.ControllerBase</cref>
+            </see>
+            </summary>
+        </member>
+        <member name="M:Customers.API.Controllers.CustomerController.#ctor(Microsoft.Extensions.Logging.ILogger{Customers.API.Controllers.CustomerController},Customers.API.Services.IHttpClientWebService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Customers.API.Controllers.CustomerController"/> class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="httpClient">The HTTP client.</param>
+        </member>
+        <member name="M:Customers.API.Controllers.CustomerController.GetCustomer">
+            <summary>
+            Gets the customer.
+            </summary>
+            <returns>Customer.</returns>
+            <exception cref="T:Customers.API.Models.BadRequestException"></exception>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Customers.API.Controllers.CustomerController.CreateCustomer(Customers.API.Models.Customer)">
+            <summary>
+            Creates the customer.
+            </summary>
+            <param name="customer">The customer.</param>
+            <returns>Customer.</returns>
+            <exception cref="T:Customers.API.Models.BadRequestException"></exception>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Customers.API.Controllers.CustomerController.CreateAccount(Customers.API.Models.Account)">
+            <summary>
+            Creates the account.
+            </summary>
+            <param name="account">The account.</param>
+            <returns>ActionResult.</returns>
+        </member>
+    </members>
+</doc>
