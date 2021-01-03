@@ -28,7 +28,6 @@ namespace Customers.API.Services
             {
                 BaseAddress = new Uri(url),
                 Timeout = new TimeSpan(0, 0, 0, 60 * 5)
-                //,DefaultRequestHeaders = { Authorization = new AuthenticationHeaderValue("Signature", authToken) }
             };
 
             var request = new HttpRequestMessage { Method = httpMethod };
@@ -45,7 +44,6 @@ namespace Customers.API.Services
 
             return await client.SendAsync(request);
         }
-
 
         #region Private Methods
 

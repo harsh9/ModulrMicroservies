@@ -9,7 +9,7 @@ namespace Customers.API.Services
         public string GetAccessToken(Guid nonce, string timestamp, string key, string secret)
         {
             string signatureString = "date: " + timestamp + "\n";
-            signatureString += "x-mod-nonce" + ": " + nonce;
+            signatureString += "x-mod-nonce:" + nonce;
             string encodedSignature = GenerateSignature(secret, signatureString);
             string token = CreateAccessToken(key, encodedSignature);
             return token;
